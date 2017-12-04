@@ -2,7 +2,15 @@
 
 A Ruby shell script which automates most of the work of uploading a playlist to [Mixcloud](http://www.mixcloud.com).
 
-It takes a `.m3u` playlist file, merges all audio files in it to a single `.mp3` file, and creates a timestamped tracklist text file, which can be copy-pasted into Mixcloud's "Tracklist & Timestamp" section.
+It takes a `.m3u` playlist file, merges all audio files in it to a single `.mp3` file, and creates timestamped tracklist files, which can be uploaded to MixCloud as part of the music uploading process.
+
+#### NOTE:
+
+There are two tracklist files in two different formats that are generated.
+
+The first ends with `.txt` and is the old-style format which content needs to be copy-pasted into the Upload page's "Tracklist & Timestamp" section.
+
+The second newer format is `.cue`, which MixCloud now supports, and is **the recommended** file to use, instead of the `.txt` one. Still, if this doesn't work, you can try the old-style file instead.
 
 ## Requirements
 
